@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>출발역을 선택하세요</h1>
+    <div><input type="radio" name="grp-1" value = '서울'/><label>서울</label></div>
+    <div><input type="radio" name="grp-1" value = '천안'/><label>천안</label></div>
+    <div><input type="radio" name="grp-1" value = '세종'/><label>세종</label></div>
+    <div><input type="radio" name="grp-1" value = '공주'/><label>공주</label></div>
+    <div><input type="radio" name="grp-1" value = '익산'/><label>익산</label></div>
+    <div><input type="radio" name="grp-1" value = '정읍'/><label>정읍</label></div>
+    <div><input type="radio" name="grp-1" value = '광주'/><label>광주</label></div>
+
+    <h1>도착역을 선택하세요</h1>
+    <select id="select-submit">
+        <option>서울</option>
+        <option>천안</option>
+        <option>세종</option>
+        <option>공주</option>
+        <option>익산</option>
+        <option>정읍</option>
+        <option>광주</option>
+    </select>
+
+    <button id="btn-submit">제출</button>
+
+    <h1>결과</h1>
+    <p id="start">출발역 : </p>
+    <p id="end">도착역 : </p>
+
+    <script>
+        var selectSubmit = document.getElementById("select-submit")
+        var btnSubmit = document.getElementById("btn-submit")
+        var Start = document.getElementById("start")
+        var End = document.getElementById("end")
+
+        btnSubmit.addEventListener('click',()=> {
+            selectObj = document.querySelector("input[name='grp-1']:checked")
+            Start.innerText = "출발역 : " + selectObj.value
+            End.innerText = "도착역 : " + selectSubmit.value
+        })
+    </script>
+</body>
+</html>
