@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="teiNput" placeholder="입력해주세요" rows="'10"></textarea>
+    <button id="btnok">ok</button>
+    <button id="btnclear">clear</button>
+    <script>
+
+        const teInput = document.getElementById("teiNput")
+        const btnOk = document.getElementById("btnok")
+        const clearOK = document.getElementById("btnclear")
+
+        btnOk.addEventListener('click', ()=> {
+            console.log(teInput.value)
+        })
+        clearOK.addEventListener('click', ()=> {
+            teInput.value=''
+        })
+
+
+    </script>
+</body>
+</html>

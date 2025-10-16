@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div>
+            <input type="date" id="inpDate" />
+
+        </div>
+
+        <div>
+            <input type="color" id ="inpcolor" />
+        </div>
+
+        <script>
+
+            const inpDate = document.getElementById('inpDate')
+            const inpColor = document.getElementById('inpcolor')
+
+            inpDate.addEventListener('change', (evt)=> {
+                console.log(evt.target.value)
+            })
+            inpColor.addEventListener('change', (evt)=> {
+                console.log(evt.target.value)
+            })
+
+        </script>
+
+</body>
+</html>
