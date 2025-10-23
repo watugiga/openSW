@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카운터</title>
+
+    <style>
+        body
+        {
+            background-color: blue;
+            color: white;
+        }
+        .box
+        {
+            background-color: cyan;
+            color : magenta;
+            width: 160px;
+            height: 100px;
+            padding: 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 id="count-text">count : 0</h1>
+    </div>
+    <button id="btn-plus">증가</button>
+    <button id="btn-minus">감소</button>
+    <button id="btn-reset">리셋</button>
+
+    <script>
+        var Btn_plus = document.getElementById("btn-plus")
+        var Btn_reset = document.getElementById("btn-reset")
+        var Count_text = document.getElementById("count-text")
+        var Btn_minus = document.getElementById("btn-minus")
+        var Count = 0
+
+
+        Btn_plus.addEventListener('click', ()=> {
+            Count = Count + 1
+            Count_text.textContent = "count : " + Count
+        })
+        Btn_reset.addEventListener('click', ()=>{
+            Count = 0
+            Count_text.textContent = "count : " + Count
+        })
+        Btn_minus.addEventListener('click', ()=> {
+            Count = Count - 1
+            Count_text.textContent = "count : " + Count
+        })
+
+    </script>
+</body>
+</html>
