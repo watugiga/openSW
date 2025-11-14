@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'GyeonggiMillenniumTitle';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Title_Light.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    background-color: blue;
+    color: white;
+    font-family: 'GyeonggiMillenniumTitle';
+    height: 100vh;
+}
+
+header
+{
+    display: flex;
+    background-color: yellow;
+    color: black;
+    padding: 16px;
+    justify-content: flex-end;
+}
+
+main
+{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer
+{
+    display: flex;
+    background-color: black;
+    padding: 16px;
+    justify-content: flex-start;
+}
+
+.title-txt
+{
+    font-size: 64px;
+}
+
+.menu-item
+{
+    font-size: 32px;
+}
+
+.menu-item.select
+{
+    background-color: darkorange;
+}
