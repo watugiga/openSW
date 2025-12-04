@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>웹 기반 테트리스</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="side-info left-panel">
+        <div class="panel">
+            <h3>홀드</h3>
+            <canvas id="hold" width="120" height="120"></canvas>
+            <p style="font-size: 14px; margin-top: 10px;">C 또는 Shift로 홀드</p>
+        </div>
+    </div>
+
+    <div class="left-area">
+        <canvas id="tetris" width="300" height="600"></canvas>
+
+        <div class="buttons">
+            <button id="startBtn">게임 시작</button>
+            <button id="restartBtn">재시작</button>
+            <button id="pauseBtn">일시정지</button>
+        </div>
+    </div>
+
+    <div class="side-info">
+
+        <div class="panel">
+            <h3>점수</h3>
+            <div id="score">0</div>
+        </div>
+
+        <div class="panel">
+            <h3>조작법</h3>
+            <p>← → : 이동</p>
+            <p>↑ : 회전</p>
+            <p>↓ : 소프트 드롭</p>
+            <p>Space : 하드 드롭</p>
+            <p>P : 일시정지</p>
+            <p>R : 재시작</p>
+
+            <h3>라인</h3>
+            <div id="lines">0</div>
+        </div>
+
+        <div class="panel">
+            <h3>다음 블록</h3>
+            <canvas id="next" width="120" height="120"></canvas>
+        </div>
+
+    </div>
+</div>
+
+<audio id="gameMusic" loop>
+    <source src="Tetris_Nintendo-music.m4a" type="audio/m4a"> 
+</audio>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    background: #0b1221;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+/* 왼쪽(게임 + 버튼) */
+.left-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+canvas {
+    /* ⭐ 확인: 캔버스 외곽 배경은 이미 검은색으로 설정되어 있음 */
+    background: #000;
+    display: block;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+/* 오른쪽 및 왼쪽 패널 공통 */
+.side-info {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 왼쪽 홀드 패널을 가장 왼쪽으로 배치 */
+.left-panel {
+    order: -1; 
+}
+
+.panel {
+    background: #111a33;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.panel h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    border-bottom: 1px solid #445;
+    padding-bottom: 5px;
+}
+
+#next, #hold {
+    background: #000;
+    display: block;
+    margin-top: 10px;
+}
